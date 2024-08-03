@@ -288,6 +288,15 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+
+  &:hover {
+    background: hsla(271, 100%, 40%, 1);
+    background: linear-gradient(225deg, hsla(271, 100%, 40%, 1) 0%, hsla(294, 100%, 40%, 1) 100%);
+    background: -moz-linear-gradient(225deg, hsla(271, 100%, 40%, 1) 0%, hsla(294, 100%, 40%, 1) 100%);
+    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 40%, 1) 0%, hsla(294, 100%, 40%, 1) 100%);
+    color: ${({ theme }) => theme.text_secondary}; /* Optional: change text color on hover */
+  }
 `;
 
 const Contact = () => {
